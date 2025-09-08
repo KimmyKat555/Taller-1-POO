@@ -155,21 +155,20 @@
             if (newMs >= 1000)
             {
                 newMs -= 1000;
-                newSec += 1; //pasar un segundo extra
+                newSec += 1;
             }
             if (newSec >= 60)
             {
                 newSec -= 60;
-                newMin += 1; //pasar un minuto extra
+                newMin += 1;
             }
-            // Ajustar minutos
+            
             if (newMin >= 60)
             {
                 newMin -= 60;
-                newHour += 1; // pasar una hora extra
+                newHour += 1; 
             }
 
-            // Ajustar horas (no borramos el exceso, lo usamos en IsOtherDay)
             if (newHour >= 24)
                 newHour -= 24;
 
